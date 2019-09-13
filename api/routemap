@@ -1,0 +1,42 @@
+GET
+/projects
+returns a list of all projects
+
+/projects/:projectId
+returns the project with the specified ID
+
+/projects/:projectId/payments
+returns a list of all payments within this project
+
+/projects/:projectId/payments/:paymentId
+returns the payment with the specified ID
+
+/projects/:projectId/log
+returns a list of all logEntries within this project
+
+/projects/:projectId/log/:logEntryId
+returns the logEntry with the specified ID
+
+POST
+/projects
+creates a new project
+
+/projects/:projectId/payments
+creates a new payment for the project with the specified projectId
+
+/projects/:projectId/log
+creates a new logEntry for the project with the specified projectId
+
+PUT
+/projects/:projectId
+updates the project with the specified projectId
+
+DELETE
+/projects/:projectId
+deletes the project with the specified projectId
+
+/projects/:projectId/payments/:paymentId
+deletes the payment with the specified paymentId
+
+/projects/:projectId/log/:logEntryId
+deletes the logEntry with the specified logEntryId

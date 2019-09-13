@@ -1,0 +1,24 @@
+project: {
+    id: unique string used to tell different entities apart
+    cost: decimal representation of the initial amount of money owed
+    balance: decimal representation of the amount of money still owed
+    start: string representation of the project start date
+    end: string representation of the project end date
+    employer: string representing the name of the overseer of the project
+    payments: [
+        payment: {
+            id: unique string used to tell different entities apart
+            amount: string representation of the amount of money transferred
+            date: string representation of the date the money was transferred
+            description: string description of what the payment was for
+        }
+    ]
+    log: {
+        logEntry: {
+            id: unique string used to tell different entities apart
+            start: datetime representing the start of the work period
+            end: datetime representing the end of the work period
+            duration: time representing the total hours and minutes worked
+        }
+    }
+}
