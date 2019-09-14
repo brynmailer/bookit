@@ -9,7 +9,8 @@ project: {
     payments: [
         payment: {
             id: unique string used to tell different entities apart
-            amount: string representation of the amount of money transferred
+            amount: decimal representation of the amount of money transferred
+            status: string representation of the curretn status of the payment
             date: string representation of the date the money was transferred
             description: string description of what the payment was for
         }

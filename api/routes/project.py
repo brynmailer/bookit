@@ -22,7 +22,7 @@ class Project(Resource):
             'employer': req_body['employer'],
             'description': req_body['description']
         }})
-        return dumps(projects.find({'_id': ObjectId(project_id)}), json_options=RELAXED_JSON_OPTIONS), 201
+        return dumps(projects.find({'_id': ObjectId(project_id)}), json_options=RELAXED_JSON_OPTIONS), 200
     
     def delete(self, project_id):
         # delete project with parsed project_id
