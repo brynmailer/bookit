@@ -19,7 +19,7 @@ class Payments(Resource):
         payment_id = payments.insert_one({
             'amount': req_body['amount'],
             'date': datetime.strptime(req_body['date'], '%m/%d/%Y'),
-            'status': req_body['staus'],
+            'status': req_body['status'],
             'description': req_body['description'],
         }).inserted_id
         projects.update_one({'_id': ObjectId(project_id)}, {'$set': {
