@@ -18,4 +18,4 @@ api.add_resource(Log, '/projects/<project_id>/log')
 api.add_resource(LogEntry, '/projects/<project_id>/log/<log_entry_id>')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0', debug=True)

@@ -5,6 +5,7 @@ project: {
     start: string representation of the project start date
     end: string representation of the project end date
     employer: string representing the name of the overseer of the project
+    description: string description of what the project is
     payments: [
         payment: {
             id: unique string used to tell different entities apart
